@@ -86,6 +86,8 @@ qx --no-scratch --mem=100g Rscript EMMAXinputAllTraits.R "Fakephenotypes.csv"
 ./RunGWAS_AllTraits.sh   
 
 # STEP 11: EMMA2000+EMMAX GWAS,use only mapped SNPs
+ 
+cd ..
 
 cd GWAS_emmax_emma200
 
@@ -94,6 +96,8 @@ qx --no-scratch Rscript EMMA200Emmaxinput.R
 ./RUN_EMMA200EMMAX200.sh
 
 # STEP 12: GAPIT FarmCPU GWAS,use only mapped SNPs
+
+cd ..
 
 cd GWAS_FarmCPU
 
