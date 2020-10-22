@@ -3,8 +3,13 @@
 ##Workflow for generating genotypes for GWAS directly from database output
 
 ##Step 0 takes place in the mysql database.
+
 ##Step 1-10 takes place on the GenomeDK cluster
+
 ##The local environments needed are "Rprogram" which contains R with all dependencies installed, and "myproject" which contains python 2 installed
+
+##Activate all .sh scripts by typing chmod u+x name.sh 
+
 
 # STEP 0: Get output needed from database				       
 SELECT NorGT.GenotypingDate,NorGT.GenotypeCall,NorGT.Comment,NorSN.SNPIdentifier,NorSN.ProbeSetID,NorSN.Start,NorSN.Strand,NorSN.Gene,NorSN.Annotation,NorSN.Chromosome,NorSN.Position,NorSN.CallRate,NorSN.FLD,NorSN.HetSO,NorSN.HomRO,NorSN.GenotypingPlatform,NorSN.Comment,NorGP.Name,NorGP.AlternativeName,NorGP.Donor,NorGP.GeographicOrigin,NorGP.Maintaining,NorGP.Comments
