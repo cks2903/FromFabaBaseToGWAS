@@ -100,5 +100,5 @@ conda activate Rprogram
 qx --no-scratch --mem=100g Rscript MakeFarmCPUinput.R 
 
 #Run provide comma-sep pheno-file as input
-qx --no-scratch -c 60 Rscript FarmCPU_ParallelMultiTraits.R "/home/cks/norfab/faststorage/Genotype_data_ProFaba_20201002/SNPsWithNoMissingness_OCT2020/GWAS_emmax_20201007/FN_acidity_phenotypes_avg.csv"
+qx --no-scratch -c 60 Rscript FarmCPU_ParallelMultiTraits.R "Fakephenotypes.csv"
 
