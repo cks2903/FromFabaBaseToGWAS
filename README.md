@@ -19,7 +19,9 @@ INTO OUTFILE "/Users/CathrineKiel/Desktop/genotypes.txt";
 # STEP 1: Convert from long format to wide format
 
 source ~/miniconda3/etc/profile.d/conda.sh
+
 conda activate Rprogram
+
 qx --no-scratch -c 10 --mem=250g Rscript longtowide.R 
 
 
@@ -44,6 +46,7 @@ qx --no-scratch -c 10 --mem=16g Rscript MakePedAndMapFile.R 0.1
 # STEP 4: Convert genotypes to a -1,0,1 format with only one value pr. genotype   	
 
 source activate myproject
+
 qx --no-scratch -c 10 --mem=16g python MakeGenofileReadyforGRM.py  "genotypes_numeric.tped"
 
 
@@ -55,6 +58,7 @@ qx --no-scratch -c 10 --mem=16g python MakeGenofileReadyforGRM.py  "genotypes_nu
 # STEP 6: Make a GRM using VanRaden method 1 
 
 conda deactivate
+
 qx --no-scratch --mem=100g Rscript MakeGRM.R "GenotypeFileForGRM.csv"
 
 # STEP 7: Display relationship in heatmap		
