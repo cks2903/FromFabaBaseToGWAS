@@ -32,6 +32,7 @@ qx --no-scratch -c 10 --mem=16g Rscript MakePedAndMapFile.R 0.1
 #the missing genotype might be mistaken for an allele by plink then
 
 #Then finish the .ped file using unix commands, this is way quicker than R!
+
 ./finishped.sh
 
 
