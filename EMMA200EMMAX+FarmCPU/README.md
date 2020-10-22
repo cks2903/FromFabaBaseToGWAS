@@ -7,7 +7,7 @@
 
 ##Step 1-12 takes place on the GenomeDK cluster
 
-##The local environments needed are "Rprogram" which contains R with all dependencies installed, and "myproject" which contains python 2 installed
+##The local environments needed are "Rprogram" which contains R with all dependencies installed, and "myproject" which contains python 2 installed with the following version of numpy: 1.11.3 and the following version of scipy: 1.2.0.
 
 ##Activate all .sh scripts by typing chmod u+x name.sh 
 
