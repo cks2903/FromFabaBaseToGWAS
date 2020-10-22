@@ -4,8 +4,11 @@
 ## This setup is for SNPs with no missingness as it implements three different versions of GWAS: EMMAX, EMMA200+EMMAX and FarmCPU from GAPIT
 
 ##Step 0 takes place in the mysql database.
+
 ##Step 1-12 takes place on the GenomeDK cluster
+
 ##The local environments needed are "Rprogram" which contains R with all dependencies installed, and "myproject" which contains python 2 installed
+
 ##Activate all .sh scripts by typing chmod u+x name.sh 
 
 # STEP 0: Get output needed from database				       
