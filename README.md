@@ -27,11 +27,11 @@ qx --no-scratch -c 10 --mem=250g Rscript longtowide.R
 
 qx --no-scratch -c 10 --mem=16g Rscript MakePedAndMapFile.R 0.1 
 
-##the last number is the missingness filter you want for SNPs
-##put 1.0 if you don't want a missingness filter, but be aware that 
-##the missing genotype might be mistaken for an allele by plink then
+#the last number is the missingness filter you want for SNPs
+#put 1.0 if you don't want a missingness filter, but be aware that 
+#the missing genotype might be mistaken for an allele by plink then
 
-# finish the .ped file using unix commands, this is way quicker than R!
+#Then finish the .ped file using unix commands, this is way quicker than R!
 ./finishped.sh
 
 
